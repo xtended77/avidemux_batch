@@ -2,7 +2,7 @@
 @ echo off
 : List of codepages https://ss64.com/nt/chcp.html
 CHCP 65001
-set output_dir=E:\Video\The Fall (Падение) S01_03
+set output_dir=E:\Video\Name of output directory
 
 echo -----------------------------
 set avidemux="C:\Program Files\Avidemux\avidemux.exe"
