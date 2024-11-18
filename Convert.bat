@@ -22,6 +22,9 @@ for %%f in (*.avi *.mkv *.mov *.mp4 *.mts) do (
   %avidemux% --load "%%f" --run Settings.py --save "%output_dir%\%%~nf.mp4" --quit
 )
 
+del /y "%output_dir%\*.stats"
+del /y "%output_dir%\*.mbtree"
+
 echo -----------------------------
 echo Start  time: %startTime%
 echo Finish time: %time%
