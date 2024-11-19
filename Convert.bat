@@ -17,7 +17,7 @@ echo -----------------------------
 echo Start encoding at %time%
 echo Output dir "%output_dir%"
 echo -----------------------------
-for %%f in (*.avi *.mkv *.mov *.mp4 *.mts) do (
+for %%f in (*.avi *.mkv *.mov *.mp4 *.mts *.ts) do (
   echo Processing %%~ff
   %avidemux% --load "%%f" --run Settings.py --save "%output_dir%\%%~nf.mp4" --quit
 )
